@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ghack_assignment/",
+  base: "/ghack_Assignment/",
   define: {
     'process.env': process.env 
   },
