@@ -11,10 +11,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://ghackbackend.onrender.com', // Your Express server URL
+        target: 'http://localhost:3000/api', // Your Express server URL
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
-        secure: false, // Use true if your backend is served over HTTPS
+        secure: false, // Use true if ynoour backend is served over HTTPS
       },
     },
   },

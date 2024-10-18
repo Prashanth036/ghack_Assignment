@@ -16,6 +16,7 @@ export const Home = () => {
         }
         fetchToons()
     }, [])
+    
     let navigate = useNavigate()
   async  function handleClick(ele){
          const res=await ApiEndpoints.addFavouriteWeb(ele);
